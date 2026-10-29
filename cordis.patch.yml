@@ -1,0 +1,8 @@
+# 本插件作为 profile 层贡献的 patch：把插件注册进配置树。
+#
+# Node 半：loader.import('dsh-file-upload') 解析到主入口 lib/index.js，
+# 注册宿主端 `fileUploads` 服务（供 Session controller 消费），
+# 并应用浏览器端客户端模块挂载"文件树上传按钮"功能。
+- insert:
+    - id: dsh-file-upload
+      name: dsh-file-upload
